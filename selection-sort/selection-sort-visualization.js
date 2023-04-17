@@ -26,6 +26,8 @@ function draw() {
 	textSize(48);
 	textFont('Sans-serif');
 	text('Selection sort', 50, 80);
+	textSize(12);	
+	text('Mouse press to start and increase speed', 105, 95);
 	let x = 0
 	let rectHeights = 0
 	if (historyIndex < listHistory.length){
@@ -41,7 +43,7 @@ function draw() {
 			fill(200, 0, 0)
 			if (historyIndex < listHistory.length){
 				pulse.amp(0.5);
-				pulse.freq(rectHeight*5);
+				pulse.freq(rectHeight*6);
 				pulse.width(0.5);
 				pulse.start()
 			}
